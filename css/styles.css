@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400");
 * {
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -125,14 +126,28 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  background: white; }
+
 header {
   width: 100%;
-  background: red;
-  height: 50px;
+  background: #da262c;
+  height: 58px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px; }
+  padding: 20px;
+  align-items: center; }
+  header div:first-child {
+    height: 34px; }
+  header button {
+    font-size: 0.750em;
+    color: white;
+    height: 16px;
+    line-height: 16px;
+    padding-right: 25px;
+    background: url("../img/ico-salir.png") no-repeat right center; }
 
 #subheader {
   width: 100%;
@@ -141,7 +156,84 @@ header {
   padding: 0 20px;
   background: black; }
   #subheader h2 {
-    font-size: 1.1em;
-    color: white; }
+    font-size: 0.750em;
+    color: white;
+    background: url("../img/ico_centro_ayuda.png") no-repeat left center;
+    height: 40px;
+    padding-left: 30px;
+    font-weight: 300;
+    line-height: 40px; }
+
+#content {
+  padding: 40px 20px; }
+  #content h1 {
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 22px;
+    font-size: 1.500em; }
+  #content p {
+    font-size: 0.875em;
+    color: black;
+    font-weight: 300;
+    margin-bottom: 40px;
+    line-height: 1.250em; }
+
+.menu_bienvenida li {
+  width: 100%;
+  border-bottom: 1px solid #abafb0;
+  padding: 10px 0 10px 50px; }
+  .menu_bienvenida li:last-child {
+    border-bottom: none; }
+  .menu_bienvenida li a {
+    display: block;
+    padding: 15px 20px;
+    color: #555555;
+    padding-left: 50px;
+    position: relative; }
+    .menu_bienvenida li a::before {
+      content: ' ';
+      width: 6px;
+      height: 10px;
+      background: url("../img/ico-arrow.png") no-repeat left top;
+      position: absolute;
+      top: 50%;
+      margin-top: -5px;
+      right: 35px; }
+    .menu_bienvenida li a.consumos {
+      background: url("../img/ico-mis-consumos.gif") no-repeat left center; }
+    .menu_bienvenida li a.boleta {
+      background: url("../img/ico-mi-boleta.gif") no-repeat left center; }
+    .menu_bienvenida li a.contrasena {
+      background: url("../img/ico-cambio-pass.gif") no-repeat left center; }
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fafafa;
+  padding: 10px 20px; }
+  footer ul {
+    display: table;
+    width: 100%; }
+    footer ul li {
+      width: 33%;
+      overflow: hidden;
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle; }
+      footer ul li a {
+        font-size: 0.750em;
+        font-weight: 300;
+        color: #222222;
+        padding-top: 40px;
+        display: block; }
+        footer ul li a.consumos {
+          background: url("../img/ico-mis-consumos.gif") no-repeat center top; }
+        footer ul li a.boleta {
+          background: url("../img/ico-mi-boleta.gif") no-repeat center top; }
+        footer ul li a.contrasena {
+          background: url("../img/ico-cambio-pass.gif") no-repeat center 5px; }
 
 /*# sourceMappingURL=styles.css.map */
