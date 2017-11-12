@@ -129,7 +129,14 @@ table {
 body {
   font-family: 'Roboto', sans-serif;
   background: white;
-  padding-bottom: 84px; }
+  padding-bottom: 84px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #222; }
 
 header {
   width: 100%;
@@ -343,5 +350,42 @@ footer {
   border-radius: 3px; }
 #cambio-password #copyPass {
   background: #abafb1 !important; }
+
+#te-llamamos {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #666; }
+  #te-llamamos .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc( 100% - 40px);
+    color: white;
+    text-align: center; }
+  #te-llamamos .row {
+    margin-bottom: 40px; }
+    #te-llamamos .row:first-of-type {
+      margin-bottom: 20px; }
+  #te-llamamos h1 {
+    font-size: 1.500em;
+    line-height: 1.500em;
+    margin-bottom: 20px; }
+  #te-llamamos p {
+    font-size: 0.875em; }
+  #te-llamamos i {
+    display: inline-block; }
+  #te-llamamos button {
+    font-size: 0.875em;
+    color: white;
+    width: auto;
+    line-height: 43px;
+    background: #da262c;
+    padding: 0 50px;
+    display: inline-block;
+    border-radius: 3px; }
 
 /*# sourceMappingURL=styles.css.map */
