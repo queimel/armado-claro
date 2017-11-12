@@ -311,7 +311,7 @@ footer {
 #cambio-password .row {
   margin-bottom: 20px;
   width: 100%; }
-#cambio-password label {
+#cambio-password label, #cambio-password .label {
   font-size: 0.875em;
   color: #222;
   display: block;
@@ -322,6 +322,16 @@ footer {
   font-size: 0.875em;
   color: #222;
   padding: 10px; }
+#cambio-password #newPass {
+  width: 100%;
+  border: 1px solid #d3d8db;
+  font-size: 0.875em;
+  color: #222;
+  padding: 10px;
+  background: #fafafa;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px; }
 #cambio-password button {
   font-size: 0.875em;
   color: white;
@@ -331,5 +341,7 @@ footer {
   margin: 0 auto;
   display: block;
   border-radius: 3px; }
+#cambio-password #copyPass {
+  background: #abafb1 !important; }
 
 /*# sourceMappingURL=styles.css.map */

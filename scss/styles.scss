@@ -275,7 +275,7 @@ footer{
         width: 100%;
     }
 
-    label{
+    label, .label{
         font-size: 0.875em;
         color: #222;
         display: block;
@@ -292,6 +292,18 @@ footer{
 
     }
 
+    #newPass{
+        width: 100%;
+        border: 1px solid #d3d8db;
+        font-size: 0.875em;
+        color: #222;
+        padding: 10px; 
+        background: #fafafa;
+        text-align: center;  
+        font-weight: 300;  
+        margin-bottom: 20px;
+    }
+
     button{
         font-size: 0.875em;
         color: white;  
@@ -300,6 +312,10 @@ footer{
         background: #da262c;
         margin: 0 auto;
         display: block;
-        border-radius: 3px;     
+        border-radius: 3px;
+    }
+
+    #copyPass{
+        background: #abafb1 !important;
     }
 }
