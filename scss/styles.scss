@@ -268,3 +268,38 @@ footer{
         }
     }
 }
+
+#cambio-password{
+    .row{
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    label{
+        font-size: 0.875em;
+        color: #222;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input{
+        width: 100%;
+        border: 1px solid #d3d8db;
+
+        font-size: 0.875em;
+        color: #222;
+        padding: 10px;
+
+    }
+
+    button{
+        font-size: 0.875em;
+        color: white;  
+        width: 140px;
+        line-height: 43px;
+        background: #da262c;
+        margin: 0 auto;
+        display: block;
+        border-radius: 3px;     
+    }
+}
