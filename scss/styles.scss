@@ -208,7 +208,8 @@ footer{
                 position: absolute;
                 right: 0;
                 top: 50%;
-                margin-top: -30%;
+
+                transform: translate(0, -50%);
                 height: 60%;
                 width: 1px;
                 background: #abafb0;
