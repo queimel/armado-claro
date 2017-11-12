@@ -76,7 +76,7 @@ header{
         font-size: 1.500em;
     }
 
-    p{
+    p.bajada{
         font-size: 0.875em;
         color: black;
         font-weight: 300;
@@ -225,7 +225,7 @@ footer{
                 &.data{
                     font-size: 1.250rem !important;
                     color: #222222;
-
+                    font-weight: 400;
 
                 }
 
@@ -242,6 +242,28 @@ footer{
             &::before{
                 display: none;
             }
+
+        }
+    }
+}
+
+#info-boleta{
+
+    .row{
+        width: 100%;
+        margin-bottom: 20px;
+        p{
+            color: #222222;
+            margin-bottom: 10px;
+            font-size: 14px;
+
+            .red{
+                color: #ff2324
+            }
+        }
+
+        .info{
+            font-weight: 300;
 
         }
     }

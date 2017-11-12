@@ -184,7 +184,7 @@ header {
     color: #222;
     margin-bottom: 22px;
     font-size: 1.500em; }
-  #content p {
+  #content p.bajada {
     font-size: 0.875em;
     color: black;
     font-weight: 300;
@@ -287,12 +287,25 @@ footer {
           font-size: 0.875rem !important; }
         .service_info .row article p.data {
           font-size: 1.250rem !important;
-          color: #222222; }
+          color: #222222;
+          font-weight: 400; }
         .service_info .row article p.bajada {
           font-weight: 300 !important;
           font-size: 0.750em !important;
           color: #222 !important; }
     .service_info .row article:last-child::before {
       display: none; }
+
+#info-boleta .row {
+  width: 100%;
+  margin-bottom: 20px; }
+  #info-boleta .row p {
+    color: #222222;
+    margin-bottom: 10px;
+    font-size: 14px; }
+    #info-boleta .row p .red {
+      color: #ff2324; }
+  #info-boleta .row .info {
+    font-weight: 300; }
 
 /*# sourceMappingURL=styles.css.map */
