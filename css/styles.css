@@ -128,7 +128,8 @@ table {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: white; }
+  background: white;
+  padding-bottom: 84px; }
 
 header {
   width: 100%;
@@ -137,8 +138,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px;
-  align-items: center; }
+  align-items: center;
+  padding: 20px; }
   header div:first-child {
     height: 34px; }
   header button {
@@ -154,11 +155,23 @@ header {
   height: 40px;
   line-height: 40px;
   padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background: black; }
   #subheader h2 {
     font-size: 0.750em;
     color: white;
     background: url("../img/ico_centro_ayuda.png") no-repeat left center;
+    height: 40px;
+    padding-left: 30px;
+    font-weight: 300;
+    line-height: 40px; }
+  #subheader button.ico_ejecutivo {
+    font-size: 0.750em;
+    color: white;
+    background: url("../img/ico-ejecutivo.png") no-repeat left center;
     height: 40px;
     padding-left: 30px;
     font-weight: 300;
@@ -208,7 +221,7 @@ header {
 
 footer {
   width: 100%;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -235,5 +248,51 @@ footer {
           background: url("../img/ico-mi-boleta.gif") no-repeat center top; }
         footer ul li a.contrasena {
           background: url("../img/ico-cambio-pass.gif") no-repeat center 5px; }
+
+.service_info {
+  padding: 30px 0px;
+  display: table;
+  width: 100%; }
+  .service_info .row {
+    display: table-row; }
+    .service_info .row div.ico {
+      display: table-cell;
+      vertical-align: middle;
+      max-width: 60px;
+      padding: 15px 7.14% 15px 0; }
+    .service_info .row article {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 15px  3.125%;
+      position: relative; }
+      .service_info .row article::before {
+        content: ' ';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -30%;
+        height: 60%;
+        width: 1px;
+        background: #abafb0; }
+      .service_info .row article:first-child {
+        padding-left: 0 !important; }
+      .service_info .row article h4 {
+        font-size: 0.750em;
+        font-weight: 300;
+        color: #222222;
+        margin-bottom: 10px; }
+      .service_info .row article p {
+        margin-bottom: 2px !important; }
+        .service_info .row article p span {
+          font-size: 0.875rem !important; }
+        .service_info .row article p.data {
+          font-size: 1.250rem !important;
+          color: #222222; }
+        .service_info .row article p.bajada {
+          font-weight: 300 !important;
+          font-size: 0.750em !important;
+          color: #222 !important; }
+    .service_info .row article:last-child::before {
+      display: none; }
 
 /*# sourceMappingURL=styles.css.map */
